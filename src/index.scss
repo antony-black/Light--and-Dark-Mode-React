@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import 'normalize.css';
+
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --button-bg: lightgoldenrodyellow;
+  ;
+  --button-text: #000;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --text-primary: #fff;
+  --button-bg: lightgreen;
+  --button-text: #fff;
+}
+
+.main-container {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  transition: all 1s;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 100%;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.switch-mode-btn {
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--button-text);
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
